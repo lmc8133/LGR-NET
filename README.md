@@ -7,6 +7,7 @@ python==3.7.13
 torch==1.11.0+cu113
 torchvision==0.12.0+cu113
 mmcv-full==1.3.18
+mmdet==2.11.0
 tensorboard==2.8.0
 transformers==2.11.0
 einops==0.4.1
