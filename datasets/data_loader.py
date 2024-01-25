@@ -309,13 +309,4 @@ class TransVGDataset(data.Dataset):
                 word_id = features[0].input_ids
                 word_mask = features[0].input_mask
         
-        if self.testmode:   #always false
-            return img, np.array(word_id, dtype=int), np.array(word_mask, dtype=int),\
-                np.array(bbox, dtype=np.float32), np.array(ratio, dtype=np.float32), \
-                np.array(dw, dtype=np.float32), np.array(dh, dtype=np.float32), self.images[idx][0]
-        else:
-            # print(img.shape)
-            if self.dataset == 'SK' and self.use_knowledge and self.split_knowledge_query:
-                return img, np.array(img_mask), np.array(query_id, dtype=int), np.array(query_mask, dtype=int), np.array(knowledge_id, dtype=int), np.array(knowledge_mask, dtype=int), np.array(bbox, dtype=np.float32)
-            else:
-                return img, np.array(img_mask), np.array(word_id, dtype=int), np.array(word_mask, dtype=int), np.array(bbox, dtype=np.float32)
+        return img, np.array(img_mask), np.array(word_id, dtype=int), np.array(word_mask, dtype=int), np.array(bbox, dtype=np.float32)

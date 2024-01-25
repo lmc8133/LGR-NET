@@ -306,22 +306,6 @@ def collate_fn(raw_batch):
     return tuple(batch)
 
 
-def collate_fn_sk(raw_batch):
-    raw_batch = list(zip(*raw_batch))
-    
-    img = torch.stack(raw_batch[0])
-    img_mask = torch.tensor(np.array(raw_batch[1]))
-    img_data = NestedTensor(img, img_mask)
-    query_id = torch.tensor(np.array(raw_batch[2]))
-    query_mask = torch.tensor(np.array(raw_batch[3]))
-    query_data = NestedTensor(query_id, query_mask)
-    knowledge_id = torch.tensor(np.array(raw_batch[4]))
-    knowledge_mask = torch.tensor(np.array(raw_batch[5]))
-    knowledge_data = NestedTensor(knowledge_id, knowledge_mask)
-    bbox = torch.tensor(np.array(raw_batch[6]))
-    return (img_data, (query_data, knowledge_data), bbox)
-
-
 def _max_by_axis(the_list):
     # type: (List[List[int]]) -> List[int]
     maxes = the_list[0]
