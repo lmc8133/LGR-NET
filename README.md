@@ -21,7 +21,7 @@ We recommand to install mmdet from the source code in this repository (./models/
 We follow the data preparation of TransVG, which can be found in [GETTING_STARTED.md](https://github.com/djiajunustc/TransVG/blob/main/docs/GETTING_STARTED.md)
 
 ## 3. Checkpoint preparation
-We use the checkpoint from [QRNet](https://github.com/LukeForeverYoung/QRNet), they put the checkpoints in [Google Drive](https://drive.google.com/drive/folders/1GTi32iEfsJdYNtcHCUQIbhMdL5YFByVF). The downloaded checkpoints should be put in `checkpoints/`.
+We use the checkpoints from [QRNet](https://github.com/LukeForeverYoung/QRNet), they put the checkpoints in [Google Drive](https://drive.google.com/drive/folders/1GTi32iEfsJdYNtcHCUQIbhMdL5YFByVF). You should mkdir `checkpoints/` and put the downloaded checkpoints in it.
 
 ## Training
 ```
