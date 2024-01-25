@@ -1,0 +1,7 @@
+# ninja log v5
+0	2906	1653360996841976332	/data/lmc/TransVG/models/visual_model/ops/build/temp.linux-x86_64-3.7/data/lmc/TransVG/models/visual_model/ops/src/cpu/ms_deform_attn_cpu.o	50aa9f6fe2fe1bf2
+0	10336	1653361004270128337	/data/lmc/TransVG/models/visual_model/ops/build/temp.linux-x86_64-3.7/data/lmc/TransVG/models/visual_model/ops/src/cuda/ms_deform_attn_cuda.o	7b5c80ced054322
+0	16367	1653361010286250399	/data/lmc/TransVG/models/visual_model/ops/build/temp.linux-x86_64-3.7/data/lmc/TransVG/models/visual_model/ops/src/vision.o	744df0d4bf190b67
+0	5016	0	/data/lmc/TransVG/models/visual_model/ops/build/temp.linux-x86_64-3.7/data/lmc/TransVG/models/visual_model/ops/src/cpu/ms_deform_attn_cpu.o	9e47498458d6ee1c
+0	12790	0	/data/lmc/TransVG/models/visual_model/ops/build/temp.linux-x86_64-3.7/data/lmc/TransVG/models/visual_model/ops/src/cuda/ms_deform_attn_cuda.o	1e017ae591acf903
+1	15474	0	/data/lmc/TransVG/models/visual_model/ops/build/temp.linux-x86_64-3.7/data/lmc/TransVG/models/visual_model/ops/src/vision.o	a526b362c106b4fd
