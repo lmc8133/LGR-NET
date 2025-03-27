@@ -1,5 +1,6 @@
 # LGR-NET
-The source code of our paper: LGR-NET: Language Guided Reasoning Network for Referring Expression Comprehension (under review)
+The source code of our paper:
+[LGR-NET: Language Guided Reasoning Network for Referring Expression Comprehension](https://ieeexplore.ieee.org/document/10463072)
 # Installation
 ## 1. Prepare the environment
 ```
